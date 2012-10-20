@@ -26,8 +26,14 @@
   
   <!-- Required Modernizr file -->
   <script src="modernizr.custom.js"></script>
+  
+  <link rel="stylesheet" href="popdist.css">
+  <!-- <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script> -->
+  <script type="text/javascript" src="d3.js"></script>
+  <script type="text/javascript" src="d3.layout.js"></script>
+  <script type="text/javascript" src="popdist.js"></script>
 </head>
-<body class="deck-container">
+<body class="deck-container" onload="drawChart()">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
@@ -86,7 +92,7 @@
 </section>
 
 <section class="slide">
-  <p style="padding-top:15%;"/>
+  <p style="padding-top:10%;"/>
   <blockquote>
     <p>Prerequisite to the engagement of any kind of
       <br/><b style="text-decoration:underline;">systems administration</b>
@@ -104,9 +110,9 @@
 </section>
 
 <section class="slide" style="background:#f4fafe;">
-  <h3 style="padding-top:10%;"><a href="http://en.wikipedia.org/wiki/Systems_thinking">on thinking...</a></h3>
+  <h3 style="padding-top:7%;"><a href="http://en.wikipedia.org/wiki/Systems_thinking">on thinking...</a></h3>
   <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Systems_thinking_about_the_society.svg/500px-Systems_thinking_about_the_society.svg.png">
-  <p class="slide" style="text-align:right;text-size:70%">oh, that we would wax philosophic on "ologies" and "onomies".</p>
+  <p class="slide" style="padding-top:3%;text-align:right;text-size:70%">oh, that we would wax philosophic on "ologies" and "onomies".</p>
 </section>
 
 <section class="slide">
@@ -124,10 +130,9 @@
 
 <section class="slide">
   <h3 style="padding-top:10%;">we must <a href="http://www.google.com/search?q=define+system">define system:</a></h3>
-    <div style="padding-top:5%;padding-left:10%;padding-right:10%">
+    <div style="padding-top:10%;padding-left:10%;padding-right:10%">
       <span><em>sys·tem</em></span>
       <span style="font:smaller;padding-bottom:7px">/ˈsistəm/</span>
-    </h3>
     <table>
       <tbody>
         <tr>
@@ -138,8 +143,8 @@
                 <tr>
                   <td>
                     <ol style="padding-left:19px">
-                      <li style="list-style-type:decimal">A set of connected things or parts forming a complex whole, in particular.</li>
-                      <li style="list-style-type:decimal">A set of things working together as parts of a mechanism or an interconnecting network.</li>
+                      <li style="font-size:90%;list-style-type:decimal">A set of connected things or parts forming a complex whole, in particular.</li>
+                      <li style="font-size:90%;list-style-type:decimal">A set of things working together as parts of a mechanism <br/> or an interconnecting network.</li>
                     </ol>
                   </td>
                 </tr>
@@ -153,7 +158,7 @@
         <tr>
           <td style="padding-bottom:5px;padding-top:5px;color:#666" valign="top" width="80px">Synonyms:</td>
           <td style="padding-bottom:5px;padding-top:5px" valign="top">
-            <div style="padding-left:39px">method - order - scheme - process</div>
+            <div style="font-size:90%;padding-left:39px">method - order - scheme - process</div>
           </td>
         </tr>
       </tbody>
@@ -163,29 +168,36 @@
 </section>
 
 <section class="slide">
-  <p style="padding-top:10%;"/>
-  <blockquote>
-    <p>A system is an organization of related resources which provides a service.</p>
-  </blockquote>
+  <div style="padding-top:20%;padding-left:20%;padding-right:20%;">
+    <blockquote>
+      <p>A system is
+        <br/>an organization 
+        <br/>of related resources
+        <br/>which provides a service.
+      </p>
+    </blockquote>
+  </div>
 </section>
 
 <section class="slide">
-  <h3 style="padding-top:10%">A bold claim:</h3>
+  <h3 style="text-align:center;padding-top:20%;">now, a bold claim:</h3>
 </section>
 
 <section class="slide" style="background:#f4fafe;">
-  <h3 style="padding-top:10%;text-align:center">Any organization that provides a service,<br/>must be primarily concerned with these three functions:</h3>
+  <h3 style="padding-top:7%;text-align:center">Successful systems administraion,
+    <br/>must be primarily concerned with these three functions:
+  </h3>
   <img src="./images/primary.png">
 </section>
 
 <section class="slide">
   <h3 style="padding-top:10%">...a new idea?</h3>
-  <h3 class="slide" style="padding-top:10%;padding-left:35%"><a href="http://en.wikipedia.org/wiki/Devops">DevOps?</a> Anybody?</h3>
+  <h3 class="slide" style="padding-top:15%;text-align:center"><a href="http://en.wikipedia.org/wiki/Devops">not really</a></h3>
 </section>
 
 <section class="slide" id="elements-videos">
-  <h3 style="padding-top:5%;text-align:center">no really, what is DevOps?</h3>
-  <iframe style="padding-top:5%" width="853" height="480" src="http://www.youtube.com/embed/Fx8OBeNmaWw" frameborder="0" allowfullscreen></iframe>
+  <h3 style="padding-top:10%;text-align:center">no really...</h3>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/Fx8OBeNmaWw" frameborder="0" allowfullscreen></iframe>
 </section>
 
 <section class="slide">
@@ -194,11 +206,29 @@
     <p>[in] response to the interdependence of software development and IT operations.</p>
     <p><cite>- wikipedia:devops</cite></p>
   </blockquote>
-  <p class="slide" style="text-align:right">but, systems administration has been around for a while, right?</p>
 </section>
 
+<section class="slide">
+  <h3 style="padding-top:10%;text-align:left">a declaration:</h3>
+  <div class="slide" style="padding-left:5%%;padding-right:5%;">
+    <blockquote>
+      <p>The most valuable skill
+        <br/>in the business of information technology
+        <br/>is the ability to distinguish
+        <br/>unnecessary complications
+        <br/>from inherent complexity.
+      </p>
+    </blockquote>
+  </div>
+</section>
 
-
+<section class="slide">
+  <h3 style="padding-top:10%;text-align:left">naive speculation...</h3>
+  <div class="slide">
+    <div id="dist" style="padding-left:30%;padding-right:25%"></div>
+    <h3 id="cap" style="padding-top:10%;text-align:center"></h3>
+  </div>
+</section>
 
 <!-- End slides. -->
 
