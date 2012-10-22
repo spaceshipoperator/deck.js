@@ -2,3 +2,4 @@
 .sass-cache/
 progress/
 d3.*
+tmp/*

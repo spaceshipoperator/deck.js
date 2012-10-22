@@ -98,4 +98,56 @@ function drawChart()  {
         d3.select("#cap").text(data.cap);
     }
 
+    var w1 = 960,
+    h1 = 500;
+    
+    var svg1 = d3.select("#prim").append("svg:svg")
+        .attr("width", w1)
+        .attr("height", h1);
+    
+    svg1.append("svg:circle")
+        .attr("cx", 590)
+        .attr("cy", 340)
+        .attr("r", 160)
+        .style("fill", "steelblue")
+        .style("fill-opacity", ".5");
+
+    svg1.append("svg:g")
+        .attr("transform", "translate(590, 340)")
+        .append("svg:text")
+        .attr("dy", ".35em")
+        .attr("class", "chartLabel")
+        .attr("text-anchor", "middle")
+        .text("stability");    
+
+    svg1.append("svg:circle")
+        .attr("cx", 475)
+        .attr("cy", 160)
+        .attr("r", 160)
+        .style("fill", "limegreen")
+        .style("fill-opacity", ".5");
+    
+    svg1.append("svg:g")
+        .attr("transform", "translate(475, 160)")
+        .append("svg:text")
+        .attr("dy", ".35em")
+        .attr("class", "chartLabel")
+        .attr("text-anchor", "middle")
+        .text("quality");    
+
+    svg1.append("svg:circle")
+        .attr("cx", 360)
+        .attr("cy", 340)
+        .attr("r", 160)
+        .style("fill", "maroon")
+        .style("fill-opacity", ".5");
+    
+    svg1.append("svg:g")
+        .attr("transform", "translate(360, 340)")
+        .append("svg:text")
+        .attr("dy", ".35em")
+        .attr("class", "chartLabel")
+        .attr("text-anchor", "middle")
+        .text("change");    
+
 }
