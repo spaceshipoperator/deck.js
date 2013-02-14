@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Team TPOISA</title>
+  
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+  
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" href="themes/style/web-2.3.css">
+  
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+  
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+  
+  <link rel="stylesheet" href="popdist.css">
+  <!-- <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script> -->
+  <script type="text/javascript" src="d3.js"></script>
+  <script type="text/javascript" src="d3.layout.js"></script>
+  <script type="text/javascript" src="popdist.js"></script>
+</head>
+<body class="deck-container" onload="drawChart()">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+<section class="slide">
+  <h2 style="padding-left:30%;padding-top:20%;">
+    what we have undertaken:
+  </h2>
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:10%;padding-top:25%;">
+    to develop a system
+  </h2>
+  <h2 class="slide" style="padding-left:25%;padding-top:10%;">
+    to educate systems administrators
+  </h2>
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:5%;padding-top:5%;">
+    kind of like this
+  </h2>
+  <img style="padding-top:3%;padding-bottom:3%;" src="./images/drawing-hands_25.jpg">
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:25%;padding-top:10%;">
+    but so far, more like:
+  </h2>
+  <img style="padding-bottom:3%;padding-top:3%;" src="./images/stickman_200.png">
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:15%;padding-top:10%;">
+    <a href="http://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development">
+      as for our team
+    </a>
+  </h2>
+  <img style="padding-bottom:3%;padding-top:3%;" src="./images/storming_300.png">
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:30%;padding-top:20%;">
+    still, we're learning lots
+  </h2>
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:15%;padding-top:10%;">
+    for instance:
+  </h3>
+  <img src="./images/cart-before-the-horse_300.jpg">
+  <p class="slide" style="padding-left:30%">(not discounting some appealing aspects of this design)</p>
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:25%;padding-top:10%;">
+    and, the old adage:
+  </h3>
+  <img src="./images/2004022600090901_200.jpg">
+  <p style="padding-left:20%">you can lead a horse to water, but you can't make him drink</p>
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:30%;padding-top:20%;">
+    Let's not forget our Scrum?
+  </h2>
+</section>
+
+<section class="slide">
+  <h3 style="padding-top:20%;">
+    remember:
+  </h3>
+  <blockquote>
+    <p>Scrum is a framework for developing
+      <br/>and sustaining complex products.
+    </p>
+    <p><cite>- K. Schwaber, J. Sutherland "The Definitive Guide to Scrum"</cite></p>
+  </blockquote>
+  <p style="padding-left:80%">and recall our aim</p>
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:10%;padding-top:20%;">
+    <u>to develop a system</u>
+  </h2>
+  <h2 class="slide" style="padding-left:25%;padding-top:10%;">
+    <u>to educate systems administrators</u>
+  </h2>
+</section>
+
+<section class="slide">
+  <h3 style="padding-top:20%;">
+    regarding relevance:
+  </h3>
+  <blockquote>
+    <p>I can explain it to you
+      <br/>but I can't understand it for you
+    </p>
+    <p><cite>- unknown</cite></p>
+  </blockquote>
+</section>
+
+<section class="slide">
+  <h3 style="padding-top:10%;padding-left:20%;">
+    as for farm animals
+  </h3>
+  <img src="./images/Funny20Horse20Smile.4165007_std_xl_20.jpg">
+  <p class="slide" style="padding-left:33%">sometimes, a picture is worth a thousand words</p>
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:10%;padding-top:20%;">
+    I promise to only provide information </br>
+    that I believe will be valuable to you.
+  </h2>
+  <p class="slide" style="padding-left:33%">(and next time, no farm animals)</p>
+</section>
+
+<section class="slide">
+  <h3 style="padding-top:40%;padding-left:60%">questions?</h3>
+
+<!-- End slides. -->
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
