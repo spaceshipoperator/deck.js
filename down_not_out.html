@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Team TPOISA</title>
+  
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" href="core/deck.core.css">
+  
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" href="extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" href="themes/style/web-2.3.css">
+  
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+  
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+  
+  <link rel="stylesheet" href="popdist.css">
+  <!-- <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script> -->
+  <script type="text/javascript" src="d3.js"></script>
+  <script type="text/javascript" src="d3.layout.js"></script>
+  <script type="text/javascript" src="popdist.js"></script>
+</head>
+<body class="deck-container" onload="drawChart()">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+<section class="slide">
+  <h2 style="padding-left:30%;padding-top:15%;">
+    A revised method and means<br/>
+    of educating information<br/>
+    systems administrators<br/>
+  </h2>
+  <h2 style="padding-left:10%;padding-top:10%;">
+    Team 3 - Sprint 2
+  </h2>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:5%;padding-left:20%;">Progress:</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- engage textbook authors</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- partner with UWT faculty</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- case study help desk systems</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- Linux on laptops</h3>
+    <h3 style="padding-top:7%;padding-left:30%;">- setup new VPS</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- migrate content to new server</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- IRC channel management</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">Engage stakeholders:</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- authors of TPOSANA (our textbook)</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- UW instructor assigned to Spring Quarter</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">UWT Helpdesk:</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">between 30 and 40 requests daily</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">supported users:</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- all staff, faculty, students on campus</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- approximately 3500 users</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">supported systems:</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- Windows workstations (XP, 7) and Mac OSX</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- Microsoft Office</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">UWT Helpdesk (cont'd):</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">FootPrints ticketing system</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- version 7</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- last updated in 2008</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- no longer available</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- MS SQL database backend</h3>
+    <h3 style="padding-top:2%;padding-left:33%;">- not directly accessible for us to query</h3>
+</section>
+    
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">Best Practical</h2>
+    <img style="padding-bottom:3%;" src="./images/bprt_m_150.png">
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">RT: Request Tracker</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">enterprise-grade issue tracking system</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">open source license</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">commercially supported</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">actively maintained</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">downloadable at bestpractical.com/rt</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">RT deployment</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">Ubuntu 12.04 LTS</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">RT4 pre-compiled version for Ubuntu</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">download, install, configure Apache</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">run locally at http://localhost/rt</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">Linux Laptops:</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- UberStudent on HP Mini</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- Arch Linux on HP Pavillion</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">Server Rebuild</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- install Phusion Passenger (Apache module)</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- install Redmine</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- set up SSL</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- redirect port 80 traffic to 443</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">Migrate content to new VPS</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- backup/restore/upgrade Postgres database</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- archive/compress/transfer files</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- wrestle with SSL</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:15%;">burndown chart?</h2> 
+    <img style="padding-top:3%;padding-bottom:3%;" src="./images/burndown_chart1_200.jpg">
+  <p class="slide" style="padding-left:65%">(it's just not ours)</p>
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:30%;padding-top:5%;"> 
+    closer to our reality
+  </h3>
+  <img style="padding-top:3%;padding-bottom:3%;" src="./images/P9240194_50.JPG">
+</section>
+
+<section class="slide">
+  <h2 style="padding-left:30%;padding-top:20%;">
+    so, Scrum's not working?
+  </h2>
+  <h3 class="slide" style="padding-top:20%;padding-left:60%">say it isn't so!</h3>
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:20%;padding-top:5%;"> 
+    a place for Scrum
+  </h3>
+  <img style="padding-top:3%;padding-bottom:3%;" src="./images/scrum_for_chaos.png">
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:30%;padding-top:10%;"> 
+    an easily predictable system
+  </h3>
+  <embed style="padding-top:5%;padding-left:30%;padding-bottom:3%;" src="./images/clock_plain.svg" type="image/svg+xml" />
+</section>
+
+<section class="slide">
+  <h3 style="padding-left:20%;padding-top:10%;"> 
+    an example of a complex system 
+  </h3>
+  <img style="padding-top:3%;" src="./images/dnarna_150.gif">
+  <h3 class="slide" style="padding-left:55%">that's more like IT</h3>
+</section>
+
+<section class="slide">
+  <h2 style="padding-top:10%;padding-left:20%;">some future work:</h2> 
+    <h3 style="padding-top:2%;padding-left:30%;">- Demo RT4</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- explore Configuration Management Systems</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- get VOIP server (Mumble) working</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- different themes/plugins for Redmine</h3>
+    <h3 style="padding-top:2%;padding-left:30%;">- script IRC operator bot</h3>
+</section>
+ 
+<section class="slide">
+  <h3 style="padding-top:40%;padding-left:60%">questions?</h3>
+</section>
+
+<!-- End slides. -->
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+  <span class="deck-status-current"></span>
+  /
+  <span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
