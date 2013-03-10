@@ -33,11 +33,7 @@
   <script type="text/javascript" src="d3.layout.js"></script>
   <script type="text/javascript" src="popdist.js"></script>
 
-
-  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/c/video.js"></script>
-
-<body class="deck-container" onload="drawChart()">
+<body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 <section class="slide">
@@ -51,13 +47,15 @@
   </h2>
 </section>
 
-<section class="slide" id="elements-videos">
+<section class="slide">
   <h3 style="padding-top:10%;text-align:center">something slightly wicked</h3>
-  <video id="hijack_user_screen" class="video-js vjs-default-skin" controls
-    preload="auto" width="853" height="480"
-    data-setup="{}">
-    <source src="./images/hijack_user_screen.mp4" type='video/mp4'>
-  </video>
+
+  <video width="640" height="360" controls preload="none">
+    <source src="http://spaceshipoperator.org/images/hijack_user_screen.mp4" type="video/mp4" />
+    <source src="./images/hijack_user_screen.ogv" type="video/ogg" />
+    <source src="./images/hijack_user_screen.webm" type="video/webm" />
+  </video> 
+    
 </section>
 
 <section class="slide">
